@@ -9,5 +9,14 @@ class Account < ActiveRecord::Base
 
   mapping do
     indexes :address, type: 'text'
+    indexes :account_number, type: 'number'
+    indexes :age, type: 'number'
+    indexes :email, type: 'keyword'
+    indexes :account_number, type: 'keyword'
+    indexes :balance, type: 'number'
+    indexes :employer, type: 'keyword'
+    indexes :firstname, type: 'keyword'
+    indexes :gender, type: 'keyword'
+    indexes :state, type: 'keyword'
   end
 end
