@@ -4,5 +4,9 @@ Rails.application.routes.draw do
     collection { get :search }
   end
 
+  resources :accounts do
+    collection { get :search }
+  end
+
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
