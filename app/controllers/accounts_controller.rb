@@ -4,7 +4,7 @@ class AccountsController < ApplicationController
   end
 
   def search
-    @accounts = Account.search(params[:q]).records
+    @accounts = Account.search(params[:q])
 
     render action: "index"
   end
