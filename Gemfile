@@ -66,3 +66,5 @@ gem 'rails-controller-testing', group: 'test'
 gem 'elasticsearch', git: 'https://github.com/elasticsearch/elasticsearch-ruby.git'
 gem 'elasticsearch-model', git: 'https://github.com/elasticsearch/elasticsearch-rails.git'
 gem 'elasticsearch-rails', git: 'https://github.com/elasticsearch/elasticsearch-rails.git'
+
+gem 'sidekiq'
