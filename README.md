@@ -12,3 +12,12 @@ The `basic` version provides a simple integration for a simple Rails model, `Art
 to include the search engine support in your model, automatically index changes to records,
 and use a form to perform simple search require 'requests.'
 
+
+## [2] Usage
+
+Download this json [https://download.elastic.co/demos/kibana/gettingstarted/accounts.zip] and bulk it to your elasticsearch
+```
+curl -H 'Content-Type: application/x-ndjson' -XPOST 'localhost:9200/bank/account/_bulk?pretty' --data-binary @accounts.json
+```
+
+You can visit `localhost:3000/accounts` and see results fetched from elsaticsearch.
